@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie List Application</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+        <div class="container">
+            <!-- Search Textbox -->
+            <div class="search-page">
+                <input type="text" id="searchBox" placeholder="Search movies" class="searchBox">
+                <!-- Pagination -->
+                <div id="pagination">
+                    <!-- Pagination links will be dynamically added here -->
+                    <input type="number" id="pageNumberInput" min="1" max="1">
+                    <button id="goButton">Go</button>
+                </div>
+            </div>
+            
+            <!-- Movie List -->
+            <div class="movieList" id="movieList">
+                <!-- Movies will be dynamically added here -->
+            </div>
+
+            <!-- Popup Container -->
+            <div id="popupContainer" class="popup">
+                <div class="popup-content">
+                    <button class="close" id="closeButton">&times;</button>
+                    <!-- Movie details will be dynamically populated here -->
+                    <h2 class="popupTitle">Title</h2>
+                    <p class="popupRelease">Release Date<p>
+                    <p class="popupRuntime">Runtime<p>
+                    <p class="popupImdb">imdb<p>
+                
+                    <img src="path/to/your/image.jpg" alt="Movie Poster">
+
+                    <p>Movie Plot</p>
+                    <p>Director</p>
+                    <p>Actors</p>
+                    <div class="userReview">
+                        <label class="ratingLabel" for="rating">Rate the movie (1 to 5):</label>
+                        <input class="raing" type="number" id="rating" name="rating" min="1" max="5">
+                        <label class="commentLabel" for="comment">Your Comment:</label>
+                        <textarea class="comment" id="comment" name="comment" rows="4" cols="50"></textarea>
+                        <button class="submitButton" id="submitReview">Submit Review</button>
+                    </div>
+                    
+                </div>
+            </div> 
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
